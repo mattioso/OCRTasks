@@ -44,7 +44,7 @@ def shift(shiftSize, text):
 
 	#Use global alphabet
 	global alphabet
-	#Have a string to hold the cyhered text
+	#Have a string to hold the cyphered text
 	cypherString= ""
 
 	#Iterate through the lists in text
@@ -57,10 +57,10 @@ def shift(shiftSize, text):
 			try:
 				cypherString= cypherString+ alphabet[text[x][y] + shiftSize]
 			except:
-				#If the cypher does need to go backwards, minus the length of the alphebet and then add shift size
+				#If the cypher does need to go backwards, minus the length of the alphabet and then add shift size
 				cypherString= cypherString+ alphabet[text[x][y] - len(alphabet) + shiftSize]
 
-	#Delete the first unnecassery space
+	#Delete the first unnecessary space
 	cypherString= cypherString[1:]
 	#Return the string
 	return cypherString
