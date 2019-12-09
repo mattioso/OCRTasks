@@ -1,0 +1,4 @@
+We need to be able to test whether this is actually going to
+scramble anything, and we also need to test what this data
+looks like inside of python because we are going to have to
+rewrite the while file
