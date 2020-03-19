@@ -87,8 +87,6 @@ class Window(object):
     self.outputText.insert('end', self.output)
     self.outputText.configure(state='disabled')
 
-
-
   def checkOperation(self, operation):
     if not operation in ['+', '-', '/', '*']:
       return False
